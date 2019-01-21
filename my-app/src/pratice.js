@@ -123,12 +123,45 @@
 
 
 
-		/*$(document).ready(function(){
+		$(document).ready(function(){
 		  $.get("https://api.themoviedb.org/3/movie/latest?api_key=2bcc8bc7932766f61ccf677eaa208209&language=en-US", function(data, status){
 		  		console.log(data.results);
 		    alert("Data: " + data.results[0].original_title + "\nStatus: " + status);
 		  });
-		});*/
+
+		  /*$.get("http://localhost:3000/posts", function(data, status){
+		  		console.log(data);
+		    // alert("Data: " + data.results[0].original_title + "\nStatus: " + status);
+		  });
+*/		   $.ajax({
+			    url: 'http://localhost:3000/posts',
+			    method: 'GET',
+			    // data:DATA,
+			    success: function(data,result) {
+			        // Do something with the result
+			        // console.log(result);
+		  			console.log(data);
+			    }
+			});
+		   /*$.ajax({
+			    url: 'http://localhost:3000/posts/21',
+			    method: 'PUT',
+			    // data:DATA,
+			    success: function(data,result) {
+			        // Do something with the result
+			        console.log(result);
+			    }
+			});*/
+
+		  /*$.ajax({
+			    url: 'http://localhost:3000/posts/2',
+			    method: 'DELETE',
+			    success: function(data,result) {
+			        // Do something with the result
+			    }
+			});*/
+
+		});
 
 		/*$.get("https://api.themoviedb.org/3/search/movie?api_key=2bcc8bc7932766f61ccf677eaa208209&language=en-US&query=lover&page=1&include_adult=false")*/
 
@@ -141,7 +174,7 @@
 		x(names);
 		console.log(x(names));*/
 
-		var n=100;
+		/*var n=100;
 
 		for(i=1; i<=n; i++)
 	    {
@@ -157,7 +190,7 @@
 	        if(fact==2)
 	        	console.log(i);
 	    }
-
+*/
 	    /*var n=30;
 
 		for(i=1; i<=n; i++)
