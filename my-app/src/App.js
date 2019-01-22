@@ -4,6 +4,7 @@ import './App.css';
 import Demo_one from './demo.js';
 import Pro from './pro.js';
 import Counter from './sta.js';
+import State_part from './tuotial_point.jsx';
 
 class Demo extends Component {
   render() {
@@ -13,6 +14,7 @@ class Demo extends Component {
         <Demo_one/>
         <Pro/>
         <Counter/>
+        <State_part/>
       </div>
     );
   }
