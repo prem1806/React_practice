@@ -130,7 +130,7 @@
 		  });
 
 		  /*$.get("http://localhost:3000/posts", function(data, status){
-		  		console.log(data);
+		  		console.log(data "1302-1771-9996-9901-4232-8679");
 		    // alert("Data: " + data.results[0].original_title + "\nStatus: " + status);
 		  });
 */		   $.ajax({
